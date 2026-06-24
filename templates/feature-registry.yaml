@@ -1,0 +1,90 @@
+version: 1
+modules:
+  hooks:
+    label: Hook engine
+    features:
+      bash_compress:
+        label: Bash output compression
+        phase: 1
+        targets: [copilot, cursor, claude]
+        implemented: [copilot, cursor]
+      search_compress:
+        label: Search/grep compression
+        phase: 2
+        targets: [copilot, cursor, claude]
+        implemented: [copilot, cursor]
+      lean_output_nudges:
+        label: Lean output nudges
+        phase: 2
+        targets: [copilot]
+        implemented: [copilot, cursor]
+      session_continuity:
+        label: Session continuity
+        phase: 1
+        targets: [copilot]
+        implemented: [copilot, cursor]
+      session_logging:
+        label: Session logging
+        phase: 1
+        targets: [copilot, cursor]
+        implemented: [copilot, cursor]
+      loop_detection:
+        label: Loop detection
+        phase: 2
+        targets: [copilot, cursor, claude]
+        implemented: [copilot, cursor]
+  skills:
+    label: Compressed skills
+    features:
+      output-control:
+        label: Output control skill
+        phase: 1
+        targets: [copilot]
+        implemented: [copilot, cursor]
+      token-economy:
+        label: Token economy skill
+        phase: 1
+        targets: [copilot]
+        implemented: [copilot, cursor]
+      mcp-hygiene:
+        label: MCP hygiene skill
+        phase: 1
+        targets: [copilot]
+        implemented: [copilot, cursor]
+      workflow-habits:
+        label: Workflow habits skill
+        phase: 1
+        targets: [copilot]
+        implemented: [copilot, cursor]
+  settings:
+    label: Copilot settings
+    features:
+      mcp_hygiene:
+        label: MCP plugin hygiene defaults
+        phase: 1
+        targets: [copilot]
+        implemented: [copilot, cursor]
+  vscode:
+    label: VS Code settings
+    features:
+      copilot_defaults:
+        label: Copilot chat defaults
+        phase: 1
+        targets: [copilot]
+        implemented: [copilot, cursor]
+  measurement:
+    label: Usage measurement
+    features:
+      debug_logs:
+        label: VS Code debug log rollup
+        phase: 2
+        targets: [copilot, cursor]
+        implemented: [copilot, cursor]
+  hooks-rtk:
+    label: RTK external hooks
+    features:
+      rtk_proxy:
+        label: RTK bash proxy
+        phase: 1
+        targets: [copilot, cursor, claude]
+        implemented: [copilot, cursor]

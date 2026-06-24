@@ -1,0 +1,4 @@
+{
+  "github.copilot.chat.agent.debug.enabled": false,
+  "github.copilot.chat.codesearch.enabled": true
+}

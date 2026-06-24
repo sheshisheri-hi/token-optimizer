@@ -1,0 +1,6 @@
+{
+  "_slim": {
+    "note": "Copilot Slim MCP hygiene — disable unused heavy MCP servers in VS Code MCP panel"
+  },
+  "github.copilot.chat.agent.runTasks": false
+}
