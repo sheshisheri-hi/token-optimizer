@@ -15,6 +15,8 @@ That means optimization is not only about writing shorter prompts; it is also ab
 
 ## Active tools and open source projects
 
+The following examples are external community or experimental resources, so verify their current availability, maintenance status, and fit for production use before adopting them.
+
 ### `alexgreensh/token-optimizer`
 
 A local, single-file tool that focuses on:
